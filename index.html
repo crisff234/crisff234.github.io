@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Top Goleadores de Europa</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f0f0f0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 30px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .ligas {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px 0;
+    }
+
+    .liga {
+      margin: 20px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .liga img {
+      width: 120px;
+      height: 120px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .liga:hover {
+      transform: scale(1.1);
+    }
+
+    .goleadores {
+      display: none;
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    .goleadores h2 {
+      color: #222;
+      margin-bottom: 20px;
+    }
+
+    .jugador {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    .jugador img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 20px;
+      border: 2px solid #333;
+    }
+
+    .jugador div {
+      font-size: 1.1em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>? Top 5 Goleadores - Ligas Europeas</h1>
+    <p>Haz clic en una liga para ver sus máximos goleadores</p>
+  </header>
+
+  <section class="ligas">
+    <div class="liga" onclick="mostrar('serieA')">
+      <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Serie_A_logo_%282019%29.svg" alt="Serie A">
+    </div>
+    <div class="liga" onclick="mostrar('bundesliga')">
+      <img src="https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg" alt="Bundesliga">
+    </div>
+    <div class="liga" onclick="mostrar('laliga')">
+      <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/LaLiga_Santander.svg" alt="La Liga">
+    </div>
+    <div class="liga" onclick="mostrar('premier')">
+      <img src="https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg" alt="Premier League">
+    </div>
+  </section>
+
+  <!-- Serie A -->
+  <section id="serieA" class="goleadores">
+    <h2>Serie A - Goleadores</h2>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3d/Lautaro_MartinezC3%ADnez_2022.jpg"><div><strong>Lautaro Martínez</strong> – 24 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Dusan_Vlahovic_2022.jpg"><div><strong>Dušan Vlahovic</strong> – 18 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/7/70/Victor_Osimhen_2021.jpg"><div><strong>Victor Osimhen</strong> – 17 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/5/58/Olivier_Giroud_2022.jpg"><div><strong>Olivier Giroud</strong> – 15 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/Paulo_Dybala_2023.jpg"><div><strong>Paulo Dybala</strong> – 13 goles</div></div>
+  </section>
+
+  <!-- Bundesliga -->
+  <section id="bundesliga" class="goleadores">
+    <h2>Bundesliga - Goleadores</h2>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/Harry_Kane_2023.jpg"><div><strong>Harry Kane</strong> – 36 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Lois_Openda_2023.jpg"><div><strong>Loïs Openda</strong> – 24 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Serhou_Guirassy_2023.jpg"><div><strong>Serhou Guirassy</strong> – 28 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Jonas_Hofmann_2022.jpg"><div><strong>Jonas Hofmann</strong> – 12 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Jamal_Musiala_2022.jpg"><div><strong>Jamal Musiala</strong> – 11 goles</div></div>
+  </section>
+
+  <!-- La Liga -->
+  <section id="laliga" class="goleadores">
+    <h2>LaLiga - Goleadores</h2>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Jude_Bellingham_2023.jpg"><div><strong>Jude Bellingham</strong> – 19 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1d/Robert_Lewandowski_2022.jpg"><div><strong>Robert Lewandowski</strong> – 17 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Antoine_Griezmann_2018.jpg"><div><strong>Antoine Griezmann</strong> – 16 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Vinicius_Junior_2022.jpg"><div><strong>Vinícius Jr.</strong> – 15 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Artem_Dovbyk_2024.jpg"><div><strong>Artem Dovbyk</strong> – 21 goles</div></div>
+  </section>
+
+  <!-- Premier League -->
+  <section id="premier" class="goleadores">
+    <h2>Premier League - Goleadores</h2>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Erling_Haaland_2023.jpg"><div><strong>Erling Haaland</strong> – 27 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/b/b4/Cole_Palmer_2023.jpg"><div><strong>Cole Palmer</strong> – 22 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/5/52/Ollie_Watkins_2023.jpg"><div><strong>Ollie Watkins</strong> – 20 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/e/eb/Alexander_Isak_2023.jpg"><div><strong>Alexander Isak</strong> – 21 goles</div></div>
+    <div class="jugador"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Dominic_Solanke_2023.jpg"><div><strong>Dominic Solanke</strong> – 19 goles</div></div>
+  </section>
+
+  <script>
+    function mostrar(ligaId) {
+      const secciones = document.querySelectorAll('.goleadores');
+      secciones.forEach(sec => sec.style.display = 'none');
+      document.getElementById(ligaId).style.display = 'block';
+      window.scrollTo({ top: document.getElementById(ligaId).offsetTop - 20, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>
